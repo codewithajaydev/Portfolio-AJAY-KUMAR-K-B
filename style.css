@@ -14,44 +14,83 @@ body {
 }
 
 /* Navbar */
+/* Navbar */
 header {
-    position: fixed;
-    width: 100%;
-    background: rgba(15, 23, 42, 0.9);
-    backdrop-filter: blur(10px);
-    z-index: 1000;
+  position: fixed;
+  width: 100%;
+  background: rgba(15, 23, 42, 0.9);
+  backdrop-filter: blur(10px);
+  z-index: 1000;
 }
 
 nav {
-    max-width: 1100px;
-    margin: auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 15px;
+  max-width: 1100px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
 }
 
-/* Mobile Responsive Navbar */
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: #38bdf8;
+}
+
+.logo span {
+  color: #facc15;
+}
+
+/* Desktop Navbar */
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 25px;
+}
+
+.nav-links li a {
+  font-size: 16px;
+  font-weight: 500;
+  color: #fff;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.nav-links a:hover {
+  color: #38bdf8;
+}
+
+.toggle-menu {
+  display: none;
+  color: #fff;
+  font-size: 25px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+/* Mobile Responsive */
 @media (max-width: 768px) {
   .nav-links {
-    display: none; /* hide menu by default on small screens */
+    display: none; /* hidden by default */
     flex-direction: column;
-    position: absolute;
-    top: 60px;  /* below header */
+    position: fixed;
+    top: 70px; /* push below header */
     right: 20px;
     background: rgba(15, 23, 42, 0.95);
     width: 220px;
     border-radius: 10px;
     padding: 15px;
-  }
-
-  .nav-links li {
-    margin:  0;
+    z-index: 999; /* stay above content */
   }
 
   .nav-links.active {
-    display: flex; /* show when menu is toggled */
+    display: flex; /* show when toggled */
+  }
 
+  .nav-links li {
+    margin: 10px 0;
   }
 
   .toggle-menu {
@@ -59,49 +98,21 @@ nav {
   }
 }
 
-.logo {
-    font-size: 24px;
-    font-weight: bold;
-    color: #38bdf8;
-}
-
-.logo span {
-    color: #facc15;
-}
 
 
 
-/* Desktop Navbar (default) */
-.nav-links {
-  display: flex;
-  list-style: none;
-  gap: 25px; /* better spacing */
-}
-
-.nav-links li a {
-  font-size: 16px;
-  font-weight: 500;
-}
 
 
-.nav-links a {
-    color: #fff;
-    text-decoration: none;
-    transition: 0.3s;
-}
 
-.nav-links a:hover {
-    color: #38bdf8;
-}
 
-.toggle-menu {
-    display: none;
-    color: #fff;
-    font-size: 25px;
-    background: none;
-    border: none;
-    cursor: pointer;
-}
+
+
+
+
+
+
+
+
 
 /* Sections */
 section {
