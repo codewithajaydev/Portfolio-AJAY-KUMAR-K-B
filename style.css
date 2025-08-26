@@ -31,6 +31,38 @@ nav {
     padding: 15px;
 }
 
+/* Show toggle button on mobile */
+.toggle-menu {
+  display: none; /* Hide on desktop */
+  font-size: 25px;
+  background: none;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+}
+
+/* Mobile styles */
+@media (max-width: 768px) {
+  .nav-links {
+    display: none; /* Hide nav links initially */
+    flex-direction: column;
+    background: rgba(15, 23, 42, 0.95);
+    position: absolute;
+    width: 100%;
+    top: 60px;
+    left: 0;
+    padding: 20px;
+  }
+
+  .nav-links.active {
+    display: flex; /* Show nav when active */
+  }
+
+  .toggle-menu {
+    display: block; /* Show toggle button on mobile */
+  }
+}
+
 .logo {
     font-size: 24px;
     font-weight: bold;
