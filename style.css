@@ -31,35 +31,30 @@ nav {
     padding: 15px;
 }
 
-/* Show toggle button on mobile */
-.toggle-menu {
-  display: none; /* Hide on desktop */
-  font-size: 25px;
-  background: none;
-  border: none;
-  color: #fff;
-  cursor: pointer;
-}
-
-/* Mobile styles */
-@media (max-width: 768px) {
+/* Mobile Responsive Navbar */
+@media (max-width: 600px) {
   .nav-links {
-    display: none; /* Hide nav links initially */
+    display: none; /* hide menu by default on small screens */
     flex-direction: column;
-    background: rgba(15, 23, 42, 0.95);
     position: absolute;
-    width: 100%;
-    top: 60px;
-    left: 0;
-    padding: 20px;
+    top: 60px;  /* below header */
+    right: 20px;
+    background: rgba(15, 23, 42, 0.95);
+    width: 220px;
+    border-radius: 10px;
+    padding: 15px;
+  }
+
+  .nav-links li {
+    margin: 12px 0;
   }
 
   .nav-links.active {
-    display: flex; /* Show nav when active */
+    display: flex; /* show when active */
   }
 
   .toggle-menu {
-    display: block; /* Show toggle button on mobile */
+    display: block; /* show hamburger */
   }
 }
 
@@ -73,14 +68,20 @@ nav {
     color: #facc15;
 }
 
+
+
+/* Desktop Navbar (default) */
 .nav-links {
-    display: flex;
-    list-style: none;
+  display: flex;
+  list-style: none;
+  gap: 25px; /* better spacing */
 }
 
-.nav-links li {
-    margin: 0 15px;
+.nav-links li a {
+  font-size: 16px;
+  font-weight: 500;
 }
+
 
 .nav-links a {
     color: #fff;
