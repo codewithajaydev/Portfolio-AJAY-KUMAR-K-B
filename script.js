@@ -16,9 +16,4 @@ links.forEach(link => {
   });
 });
 
-// Close button inside menu (if added)
-if (closeBtn) {
-  closeBtn.addEventListener('click', () => {
-    navLinks.classList.remove('active');
-  });
-}
+
