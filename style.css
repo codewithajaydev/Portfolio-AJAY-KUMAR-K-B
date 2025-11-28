@@ -69,6 +69,22 @@ nav {
   border: none;
   cursor: pointer;
 }
+.close-menu {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .close-menu {
+    display: block;
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 28px;
+    text-align: right;
+    cursor: pointer;
+    margin-bottom: 15px;
+  }
+}
 
 /* Mobile Responsive */
 @media (max-width: 768px) {
