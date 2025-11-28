@@ -15,6 +15,7 @@
       <nav>
         <h2 class="logo">Ajay</h2>
         <ul class="nav-links">
+          <button class="close-menu">✕</button>
           <li><a href="#home">Home</a></li>
           <li><a href="#about">About</a></li>
           <li><a href="#skills">Skills</a></li>
@@ -46,7 +47,7 @@
             >GitHub</a
           >
           <a
-            href="https://drive.google.com/file/d/1GwBxRrQu45RzqxRFnAA0O7BqL12dyNvv/view?usp=sharing"
+            href="https://drive.google.com/file/d/19IdPbZk2vWAcz-FdLqpODd8g2V96RzsP/view?usp=sharing"
             target="_blank"
             class="btn"
             >Download Resume</a
@@ -60,57 +61,86 @@
     <section id="about">
       <h2>About Me</h2>
       <p>
-        Passionate Software Engineer specializing in full-stack development,
-        cloud deployment, and modern frontend design. I excel at crafting
-        efficient, scalable web applications and seamless user experiences that
-        solve real-world problems. My expertise spans designing and deploying
-        real-time GIS-based applications, building AI-powered chatbots, and
-        working with the latest technologies including React.js, Spring Boot,
-        and cloud platforms like AWS, Render, and Vercel. I thrive in
-        collaborative environments, bringing strong problem-solving skills and a
-        commitment to clean, maintainable code. Continuously learning and
-        adapting, I am dedicated to delivering impactful digital solutions that
-        enhance business capability and user satisfaction.
+        I am a dedicated Full-Stack Software Engineer with a strong focus on
+        Java, Spring Boot, and Microservices Architecture. I specialize in
+        building scalable backend systems, secure APIs, and modern
+        cloud-deployed applications using industry-standard tools and practices.
+        My expertise spans developing distributed microservices, implementing
+        API Gateways, Eureka service discovery, RabbitMQ event-driven messaging,
+        and securing applications with Keycloak, OAuth2, JWT, and PKCE. On the
+        frontend, I build responsive and dynamic interfaces using React.js,
+        ensuring seamless integration with backend services. I have hands-on
+        experience deploying containerized applications across AWS EC2, Render,
+        Netlify, Vercel, Railway, Cloud AMQP, and MongoDB Atlas, delivering
+        reliable, production-ready solutions. From designing RESTful APIs to
+        integrating AI services and optimizing cloud performance, I enjoy
+        crafting systems that are clean, maintainable, and built for scale. I am
+        continuously learning and improving — passionate about creating
+        impactful digital products through strong engineering practices and
+        modern full-stack development.
       </p>
     </section>
 
-    <!-- Skills -->
     <section id="skills">
       <h2>Technical Skills</h2>
       <div class="skills-grid">
         <div class="skill-card">
-          <h3>Full-Stack Development</h3>
+          <h3>Frontend</h3>
           <p>
-            HTML5, CSS3, JavaScript (ES6+), React.js, Java, Spring Boot, RESTful
-            APIs
+            HTML5, CSS3 (Flexbox, Grid, Media Queries, Animations), JavaScript
+            (ES6+), React.js (Hooks, Router, Forms, Components, Redux Toolkit,
+            Axios)
           </p>
         </div>
 
         <div class="skill-card">
-          <h3>Cloud & DevOps</h3>
+          <h3>Backend / Java</h3>
           <p>
-            AWS (EC2, S3, IAM, RDS), Docker, Containerization, Jenkins CI/CD,
-            Vercel, Render, Linux, Git, GitHub
+            Java (OOP: Encapsulation, Inheritance, Polymorphism, Abstraction,
+            Interfaces), File Handling, Exception Handling, JDBC,
+            Multithreading, Constructors, RESTful APIs (CRUD), Spring Boot (MVC,
+            Service, Repository layers), CORS, OpenAI/Gemini AI API Integration,
+            Microservices Architecture
           </p>
         </div>
 
         <div class="skill-card">
-          <h3>Database & Backend</h3>
-          <p>MySQL, SQL Joins, Subqueries, JDBC, Exception Handling</p>
+          <h3>Databases</h3>
+          <p>
+            SQL, PostgreSQL, MySQL, MongoDB, Joins, Subqueries, Views, Schemas,
+            Transactions
+          </p>
         </div>
 
         <div class="skill-card">
-          <h3>AI & API Integration</h3>
-          <p>OpenAI API, AI Chatbot Development, Axios</p>
+          <h3>Microservices & Messaging</h3>
+          <p>
+            Spring Boot Microservices, Eureka Server (Service Discovery), Spring
+            Cloud Config, API Gateway, RabbitMQ, Event-driven Architecture,
+            Asynchronous Processing
+          </p>
         </div>
 
         <div class="skill-card">
-          <h3>Others</h3>
-          <p>Responsive Design, UI/UX Optimization, Agile Workflows</p>
+          <h3>Authentication & Security</h3>
+          <p>Keycloak, OAuth2, JWT, PKCE Flow, Role-Based Access Control</p>
+        </div>
+
+        <div class="skill-card">
+          <h3>Cloud & DevOps / Deployment</h3>
+          <p>
+            AWS (EC2, S3, IAM, RDS, CloudWatch), Render, Netlify, Vercel,
+            Docker, Docker Compose, Linux (Shell Navigation, File Handling,
+            Permissions), Git, GitHub
+          </p>
+        </div>
+
+        <div class="skill-card">
+          <h3>Tools</h3>
+          <p>Postman, IntelliJ IDEA, VS Code</p>
         </div>
       </div>
     </section>
-
     <!-- Projects -->
     <section id="projects">
       <h2>Projects</h2>
@@ -160,6 +190,39 @@
             <li>
               End-to-end cloud solution: full-stack, AI, and deployment
               integration.
+            </li>
+          </ul>
+        </div>
+        <div class="project-card">
+          <h3>AI-Driven Fitness Microservices Application</h3>
+          <a
+            href="https://fitness-tracker-microservices.netlify.app/"
+            target="_blank"
+            >Live Demo</a
+          >
+          <ul>
+            <li>
+              Built and fully deployed a cloud-native fitness application using
+              six Spring Boot microservices across AWS EC2, Render, Netlify,
+              Railway, MongoDB Atlas, and Cloud AMQP.
+            </li>
+            <li>
+              Implemented OAuth2 SSO with Keycloak, including PKCE flow,
+              JWT-secured APIs, and RBAC via the API Gateway.
+            </li>
+            <li>
+              Developed an event-driven architecture with RabbitMQ, using
+              PostgreSQL and MongoDB for asynchronous fitness activity
+              processing.
+            </li>
+            <li>
+              Integrated Gemini AI through a dedicated AI microservice to
+              generate personalized fitness recommendations.
+            </li>
+            <li>
+              Built a full-stack React.js frontend (Redux Toolkit, Router,
+              Axios, PKCE OAuth2) with secure login and real-time activity
+              tracking.
             </li>
           </ul>
         </div>
